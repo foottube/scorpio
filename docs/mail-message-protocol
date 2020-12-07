@@ -1,0 +1,43 @@
+1.1 Add a selected stock
+Format: SCORPIO STOCK ADD {stock code}
+Example: SCORPIO STOCK ADD sh600476
+1.2 Remove a selected stock
+Format: SCORPIO STOCK REM {stock code}
+Example: SCORPIO STOCK REM sh600476
+1.3 List all selected stocks
+Format: SCORPIO STOCK LST
+
+2.1 Add a trade
+Format: SCORPIO TRADE ADD {stock code} [BUY|SELL] {price} {quantity} {time (HH:mm)}
+Example: SCORPIO TRADE ADD sh600476 BUY 28.90 1000 14:23
+2.2 Remove a trade
+Format: SCORPIO TRADE REM {stock code} [BUY|SELL] {price} {quantity} {time (HH:mm)}
+Example: SCORPIO TRADE REM sh600476 BUY 28.90 1000 14:23
+
+3.1 List current position (including PnL)
+Format: SCORPIO POSITION LST
+3.2 Add position
+Format: SCORPIO POSITION ADD {stock code} {quantity} {cost}
+Example: SCORPIO POSITION ADD sh600362 5000 20.15
+3.3 Remove position
+Format: SCORPIO POSITION REM {stock code}
+Example: SCORPIO POSITION REM sh600362
+
+4.1 Start price feed
+Format: SCORPIO PRICEFEED START
+4.2 Stop price feed
+Format: SCORPIO PRICEFEED STOP
+4.3 Make price feed to reload selected stocks
+Format: SCORPIO PRICEFEED RELOAD
+4.4 Check price feed status (busy or idle)
+Format: SCORPIO PRICEFEED STATUS
+
+5.1 Add cash
+Format: SCORPIO CASH ADD {amount} {time (HH:mm)}
+Example: SCORPIO CASH ADD 100000 13:50
+5.2 Remove cash
+Format: SCORPIO CASH REM {amount} {time (HH:mm)}
+Example: SCORPIO CASH REM 50000 14:35
+5.3 List cash
+Format: SCORPIO CASH LST
+Example: SCORPIO CASH LST

@@ -1,2 +1,3 @@
 # scorpio
-The scorpio project
+Scorpio is the Chinese stock market data capturing and analyzing project.
+
